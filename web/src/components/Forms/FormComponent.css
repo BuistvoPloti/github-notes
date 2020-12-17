@@ -1,0 +1,44 @@
+.form__input,
+.form__textarea {
+  padding: 12px 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  font-size: 16px;
+  float: left;
+  width: 75%;
+  margin-top: 12px;
+}
+
+.form__textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form__label {
+  float: left;
+  width: 25%;
+  margin-top: 18px;
+}
+
+.form__container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form__button {
+  background-color: rgb(70, 109, 223);
+  margin-top: 24px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.form__button:disabled {
+  background-color: rgb(160, 170, 175);
+  cursor: auto;
+}

@@ -1,0 +1,89 @@
+.navbar__topnav {
+    margin:2% 0 0 2%;
+    overflow: hidden;
+}
+
+.navbar__topnav .Nav_link {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid black;
+    width:120px;
+}
+
+.navbar__topnav .Nav_link:hover {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.navbar__topnav .Nav_link.active {
+    background-color: rgb(222,206,222);
+}
+
+.navbar__login {
+    padding: 16px 16px;
+    float:right;
+}
+
+.navbar__logo {
+    width:32px;
+    padding-right:4px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 84px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border:2px solid black;
+    border-radius: 2px;
+    right:0;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.navbar__dropdown-btn:hover{
+    background-color:green;
+}
+
+.dropdown-btn{
+    background-color:white;
+    color:black;
+    border:none;
+    outline:none;
+    display:block;
+    width:100%;
+}
+
+.navbar__login-btn {
+    background-color: #f7f7f7;
+    padding: 2px 15px;
+    display:inline-block;
+    text-decoration:none;
+    border-radius:5px;
+    color: black;
+    cursor:pointer;
+    border:1px solid #707070;
+}
+
+.navbar__login-btn:hover {
+    background-color: #dedede;
+}
+
+.dropdown-content .dropdown-btn:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .navbar__dropdown-btn {background-color: #3e8e41;}
+
+
+

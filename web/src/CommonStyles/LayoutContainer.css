@@ -1,0 +1,58 @@
+.repositories__table,
+.notes__table {
+  margin: auto;
+  color: #333;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 99%;
+}
+
+.repositories__table,
+.notes__table,
+td,
+th {
+  border: 1px solid #ccc;
+  height: 56px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+
+.repositories__add,
+.notes__add {
+  padding: 8px 30px;
+  color: black;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.repositories__addLinkContainer,
+.notes__addLinkContainer {
+  margin: 32px 3%;
+}
+
+.repositories__container,
+.notes__container {
+  border: 2px solid #333846;
+  margin: 0 8px 8px 8px;
+  min-height: 700px;
+}
+
+.repository__edit,
+.repository__details,
+.repository__delete,
+.note__edit,
+.note__details,
+.note__delete {
+  margin-right: 8px;
+  padding: 5px 22px;
+  color: black;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
