@@ -2,7 +2,6 @@
 .note__detailsContainer {
     margin: auto;
     width: 50%;
-    /*border: 3px solid green;*/
     padding: 10px;
 }
 
@@ -15,8 +14,3 @@
 .repository__forked,.repository__starred {
     width:14px;
 }
-
-/*
-.repository__detailValue {
-    text-align: center;
-}*/

@@ -1,6 +1,7 @@
 export const config = {
   api: {
     port: process.env.PORT,
+    baseUrl: process.env.REACT_APP_BASE_URL,
     repositories_url: process.env.REACT_APP_REPOSITORIES_URL,
     github_repositories_url: process.env.REACT_APP_GITHUB_REPOSITORIES_URL,
     notes_url: process.env.REACT_APP_NOTES_URL,

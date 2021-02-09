@@ -1,10 +1,16 @@
 {
+    "parser": "@typescript-eslint/parser",
     "plugins": [
-        "security"
+        "security",
+        "@typescript-eslint"
     ],
     "extends": [
         "airbnb-base",
-        "plugin:security/recommended"
+        "plugin:security/recommended",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/typescript"
     ],
     "env": {
         "es6": true,
@@ -19,11 +25,21 @@
         "quotes": ["error", "double"],
         "comma-dangle": "off",
         "no-console": "off",
+        "security/detect-non-literal-fs-filename": "off",
+        "import/no-dynamic-require": "off",
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
         "camelcase": "off",
+        "global-require": "off",
+        "consistent-return": "warn",
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-empty-interface": "off",
         "no-underscore-dangle": 0,
+        "linebreak-style": 0,
         "max-len": [
             "warn",
-            80
+            100
         ],
         "object-shorthand": "off",
         "object-curly-newline": "off",

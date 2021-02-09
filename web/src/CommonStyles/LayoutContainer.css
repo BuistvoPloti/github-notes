@@ -5,27 +5,35 @@
   border-collapse: collapse;
   table-layout: fixed;
   width: 99%;
+  background-color: rgb(254,254,254);
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
 }
 
 .repositories__table,
 .notes__table,
 td,
 th {
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   height: 56px;
   text-align: center;
   overflow-wrap: break-word;
 }
 
-
 .repositories__add,
 .notes__add {
   padding: 8px 30px;
   color: black;
-  background-color: #f0f0f0;
+  background-color: rgb(41, 199, 95);
   text-decoration: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
+}
+
+.add {
+  width:14px;
+  margin-right: 5px;
+  filter: invert();
 }
 
 .repositories__addLinkContainer,
@@ -34,10 +42,15 @@ th {
 }
 
 .repositories__container,
-.notes__container {
-  border: 2px solid #333846;
+.notes__container,
+.home__container {
+  border: 1px solid transparent;
   margin: 0 8px 8px 8px;
   min-height: 700px;
+  background-color: rgb(255 255 255 / 31%);
+  border-radius: 14px;
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 }
 
 .repository__edit,
@@ -55,4 +68,27 @@ th {
   border-radius: 4px;
 }
 
+@media (max-width: 1193px) {
+  .repositories__table,
+  .notes__table,
+  td,
+  th {
+    height: 132px;
+  }
+  .repository__edit,
+  .repository__details,
+  .repository__delete,
+  .note__edit,
+  .note__details,
+  .note__delete {
+    white-space: nowrap;
+    display: block;
+    width:30%;
+    margin: 12px auto;
+    text-align: center;
+  }
+}
 
+.home__container {
+  font-size: 25px;
+}
